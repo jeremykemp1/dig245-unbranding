@@ -10,7 +10,7 @@
     display: inline-block;
   }
 
-.goggles img {
+.goggles {
     position: absolute;
     top: 20%;
     left: 35%;
@@ -18,7 +18,7 @@
     height: auto;
   }
 
-  .text h2 {
+  .text{
     font-family: 'Forgotten Futurist Rg', sans-serif;
     font-style: italic;
     font-size: 50px;

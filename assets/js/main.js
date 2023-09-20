@@ -1,37 +1,26 @@
 
 /* javascript */
-let targetElement1 = document.querySelector("h2");
 
-targetElement1.addEventListener("mouseover", mouseoverHandler);
+let goggles = document.querySelector(".goggles");
+let text = document.querySelector(".text");
+let main = document.querySelector("main");
 
-function mouseoverHandler() {
-    console.log(this.innerText);
-    this.innerText = "Yeah Right.";
-    this.style = "cursor: wait";
-    }
-
-targetElement1.addEventListener("mouseout", function () {
-    this.innerText = "Anti-fog lens with UV Protection";
-    this.style = "cursor: pointer";
+goggles.addEventListener("mouseover", function(){
+    this.src = "assets/img/Fog.png"
+    this.style.cursor = "not-allowed";
+    text.innerText = "Yeah Right.";
+    main.style.transition = '1s'
+    main.style.opacity = 1;
     });
 
-
-
+goggles.addEventListener("mouseout", function () {
     
-// let targetElement2 = document.querySelector(".goggles img");
-
-// targetElement2.addEventListener("mouseover", mouseoverHandler);
-
-// function mouseoverHandler() {
-//     this.src = "assets/img/Fog.png";
-//     this.style.cursor = "wait";
-// }
-
-// targetElement2.addEventListener("mouseout", function () {
-//     this.src = "assets/img/Speedo_Speed_Socket.png";
-//     this.style = cursor = "pointer";
-// });
-
+    this.src = "assets/img/Speedo_Speed_Socket.png"
+    text.innerText = "Anti-Fog lens with UV Protection";
+    this.style.cursor = "pointer";
+    main.style.transition = '10s'
+    main.style.opacity = 0;
+    });
 
 
 
