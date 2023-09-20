@@ -1,29 +1,34 @@
 
 /* css */
 
-.image-container {
-    position: relative;
+.logo img {
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    width: 400px;
+    height: auto;
     display: inline-block;
   }
-  
-  .original-image, .hover-image {
+
+.goggles img {
     position: absolute;
-    top: 0;
-    left: 0;
-    transition: opacity 0.3s ease-in-out;
+    top: 20%;
+    left: 35%;
+    width: 400px;
+    height: auto;
   }
-  
-  .hover-image {
-    opacity: 0;
+
+  .text h2 {
+    font-family: 'Forgotten Futurist Rg', sans-serif;
+    font-style: italic;
+    font-size: 50px;
+    position: absolute;
+    text-align: center;
+    top: 65%;
+    left: 25%;
+    color: red;
   }
-  
-  .image-container:hover .original-image {
-    opacity: 0;
-  }
-  
-  .image-container:hover .hover-image {
-    opacity: 1;
-  }  
+
   
   
   
